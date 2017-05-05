@@ -1,0 +1,16 @@
+---TO INSTALL THE LANDER GAME---
+
+1. Choose a directory to be the home of the game and copy the assets, levels, src, and ttf folders into it 
+2. Copy libsigil.so to /opt/vc/lib and /usr/local/lib
+3. Copy sl.h to /usr/local/include
+4. Go back to your game directory and run the makefile
+
+---ON RASPBERRY PI STARTUP---
+
+1. Go to <game directory>/src
+2. Run the following commands (I tried to put these into the makefile; for some reason they only work if the user types them directly)
+   NOTE: If you do not run these commands you will get a linker error upon trying to run the game!
+	LD_LIBRARY_PATH=/opt/vc/lib
+	export LD_LIBRARY_PATH
+3. Run the game as you would run any other .out file, with ./Lander.out
+4. You will have to perform these steps EVERY TIME you restart the Pi. It's stupid, but I can't find a way around it.
