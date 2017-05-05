@@ -1,0 +1,2 @@
+Fox:./fox_dash_main.py
+Lander:cd Lander/src; ./Lander.out
